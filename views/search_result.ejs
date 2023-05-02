@@ -1,0 +1,42 @@
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Search People</title>
+        <link href="styles.css" rel="stylesheet">
+    <!-- put css/js here if necessary-->
+    </head>
+
+    <body>
+        <header>
+            <section id="navbar_buttons">
+                <div id="n1"><a href="http://localhost:3000/index.html" name="home">Home</a></div>               
+                <div id="n1"><a href="http://localhost:3000/display" name="display">Display</a></div>
+                <div id="n2"><a href="http://localhost:3000/search" name="search">Search</a></div>
+                <div id="n3"><a href="http://localhost:3000/insert" name="insert">Insert</a></div>
+                <div id="n4"><a href="http://localhost:3000/update" name="update">Update</a></div>
+                <div id="n5"><a href="http://localhost:3000/delete" name="delete">Delete</a></div>
+            </section>
+        </header>
+        <main>
+            <h1>Search results</h1>
+
+            <span>
+                <ul id="search_res_list">
+                    <% for(var x=0; x < data.length; x++) { %>
+                        <li>
+                            <%= data[x].name %>
+                        </li>
+                    <% } %>
+                </ul> 
+                <p>
+            </span>
+
+            <form method="POST" action="/search">
+                <span>Person Name: <input type="text" name="search_term" placeholder="Enter search term">
+                </span>
+            <button>Search</button>
+            </form>
+
+        </main>
+    </body>
+</html>

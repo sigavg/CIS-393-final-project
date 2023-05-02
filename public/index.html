@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Degrees of Separation through Photographs</title>
+        <link href="styles.css" rel="stylesheet">
+        <script src="script.js" async></script>
+
+    </head>
+    <body>
+        <header>
+            <section id="navbar_buttons">
+                <div id="n1"><a href="http://localhost:3000/index.html" name="home">Home</a></div>               
+                <div id="n1"><a href="http://localhost:3000/display" name="display">Display</a></div>
+                <div id="n2"><a href="http://localhost:3000/search" name="search">Search</a></div>
+                <div id="n3"><a href="http://localhost:3000/insert" name="insert">Insert</a></div>
+                <div id="n4"><a href="http://localhost:3000/update" name="update">Update</a></div>
+                <div id="n5"><a href="http://localhost:3000/delete" name="delete">Delete</a></div>
+            </section>
+        </header>
+        
+        <main>
+            <h1>Select two people and see how many degrees separated they are!</h1>
+            <span class="question">
+                <p>How far separated is</p>
+                <select id="person1" name="person1">
+                    <option value="Kevin Bacon" >Kevin Bacon</option>
+                    <option value="Tom Hanks">Tom Hanks</option>
+                    <option value="Barack Obama">Barack Obama</option>
+                    <option value="Donald Trump" >Donald Trump</option>
+                    <option value="Brian Urlacher">Brian Urlacher</option>
+                    <option value="Sandra Bullock">Sandra Bullock</option>
+                    <option value="Marcy Lesimple" selected>Marcy Lesimple</option>
+                    <option value="Chris Pratt">Chris Pratt</option>
+                    <option value="Wyatt Oleff">Wyatt Oleff</option>
+                    <option value="Michael Rooker">Michael Rooker</option>
+                    <option value="Emmanuel Macron">Emmanuel Macron</option>
+                    <option value="Lauren Lesimple">Lauren Lesimple</option>
+                </select>
+                <p>from</p>
+                <select id="person2" name="person2">
+                    <option value="Kevin Bacon" selected>Kevin Bacon</option>
+                    <option value="Tom Hanks">Tom Hanks</option>
+                    <option value="Barack Obama">Barack Obama</option>
+                    <option value="Donald Trump">Donald Trump</option>
+                    <option value="Brian Urlacher">Brian Urlacher</option>
+                    <option value="Sandra Bullock">Sandra Bullock</option>
+                    <option value="Marcy Lesimple">Marcy Lesimple</option>
+                    <option value="Chris Pratt">Chris Pratt</option>
+                    <option value="Wyatt Oleff">Wyatt Oleff</option>
+                    <option value="Michael Rooker">Michael Rooker</option>
+                    <option value="Emmanuel Macron">Emmanuel Macron</option>
+                    <option value="Lauren Lesimple">Lauren Lesimple</option>
+                </select>
+                <p>?</p>
+            </span>
+            <button type="button" id="calculatebtn">Calculate!</button>
+
+            <span id = "answer">
+                
+            </span>
+
+        
+        <section id="grid-container">
+            <div id="1"></div>
+            <div id="2"></div>
+            <div id="3"></div>
+            <div id="4"></div>
+            <div id="5"></div>
+            <div id="6"></div>
+        </section>
+
+        <button type="button" id="resetbtn" >Another!</button>
+
+        </main>
+
+    </body>
+</html>

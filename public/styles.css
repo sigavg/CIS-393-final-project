@@ -1,0 +1,141 @@
+body{
+    width:100%;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+header {
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+
+    position:absolute;
+    top:0%;
+    
+    background-color: #cf1d11;
+    height: 5%;
+    width:100%;
+}
+#navbar_buttons {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-content: space-around;
+}
+#navbar_buttons a{
+    color: white;
+}
+
+main{
+    width:100%;
+    top:5%;
+    padding:0;
+
+
+    margin-left: -20%;
+    margin-right: -20%;
+}
+
+h1 {
+    position:relative;
+    background-color: whitesmoke;
+    text-align: center;
+    width:75%;
+    margin: auto;
+    padding: 10px;
+
+}
+
+span {
+    position:relative;
+    padding: 10px;
+    background-color: lightgray;
+    display: block;
+    margin: auto;
+    width: 510px;
+    margin-top: 10px;
+    text-align: center;
+}
+span > * { display:inline; }
+
+#calculatebtn, #resetbtn, #searchbtn, #insertbtn{
+    position:relative;
+    background-color: rgb(255, 255, 159);
+    padding: 10px;
+    width: 600px;
+
+    display:block;
+    margin:auto;
+    margin-top: 10px;
+}
+
+#calculatebtn:hover, #resetbtn:hover, #searchbtn:hover, #insertbtn:hover {
+    background-color: rgb(197, 197, 90);
+}
+#calculatebtn:active, #resetbtn:active, #searchbtn:active #insertbtn:active {
+    background-color: rgb(121, 121, 57);
+}
+
+main {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("Photos/background.jpg");
+    position:absolute;
+    margin:auto;
+    height:100%;
+    z-index: 0;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    
+}
+
+#grid-container > div {
+    background: white;
+    border:3px solid black;
+    margin: auto;
+    padding: 10px;
+
+    width: 200px;
+    height: 200px;
+    margin-top:80px;
+    margin-bottom: 80px;
+
+    z-index: 3;
+
+    transition: all .25s ease-in-out;
+    filter: drop-shadow(10px 10px 5px black);
+}
+
+div > img {
+    width: 95%;
+    max-height: 95%;
+    object-fit: cover;
+    margin:auto;
+}
+
+#grid-container>div:hover{
+    transform:scale(1.5);
+    filter: drop-shadow(20px 20px 20px black);
+}
+
+#search_res_list, #disp_list {
+    list-style-type: none;
+}
+
+#disp_grid {
+    display:grid;
+    grid-template-columns: 10% auto;
+    justify-content: center;
+}
+
+#navbar_buttons a{
+    padding:0px 15px 10px;
+}
+
+#navbar_buttons a:hover{
+    background-color:#91130a;
+    
+}
