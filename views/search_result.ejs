@@ -20,7 +20,7 @@
         <main>
             <h1>Search results</h1>
 
-            <span>
+            <span> <!-- results box -->
                 <ul id="search_res_list">
                     <% for(var x=0; x < data.length; x++) { %>
                         <li>
@@ -29,14 +29,7 @@
                     <% } %>
                 </ul> 
                 <p>
-            </span>
-
-            <form method="POST" action="/search">
-                <span>Person Name: <input type="text" name="search_term" placeholder="Enter search term">
-                </span>
-            <button>Search</button>
-            </form>
-
+            </span> <!-- end of result box -->
         </main>
     </body>
 </html>

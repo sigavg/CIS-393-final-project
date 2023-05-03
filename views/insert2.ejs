@@ -1,7 +1,7 @@
 <html lang="en">
     <head>
         <meta charset = "UTF-8">
-        <title>Search People</title>
+        <title>Insert People</title>
         <link href="styles.css" rel="stylesheet">
     <!-- put css/js here if necessary-->
     </head>
@@ -18,18 +18,11 @@
             </section>
         </header>
         <main>
-            <h1>Update Person in Database</h1>
-
-            <form id="update">
-                <span>
-                    Type the name of the person you would like to update <br>
-                    <input type="text" name="toupdate" placeholder="full first and last name" required><br>
-
-                </span>
-                <button type="button" id="updatebtn1" class="ylwbtn" >To next step</button>
-            </form>
-                
-
+            <h1>
+                You must manually save your photo <br>
+                to the public/photos folder in the project folder.<br>
+                Rename the file to: <br><br><%=data[0].filename%>
+            </h1>
         </main>
     </body>
 </html>

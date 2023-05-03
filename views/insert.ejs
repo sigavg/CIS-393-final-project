@@ -1,7 +1,7 @@
 <html lang="en">
     <head>
         <meta charset = "UTF-8">
-        <title>Search People</title>
+        <title>Insert People</title>
         <link href="styles.css" rel="stylesheet">
     <!-- put css/js here if necessary-->
     </head>
@@ -20,18 +20,24 @@
         <main>
             <h1>Insert Person into Database</h1>
 
-            <form id="insert">
+            <form id="insertform" method="post" action="/insert">
                 <span>
                     To add a person, you must upload a picture with
                     the new person and an existing person.<br><br>
-                    Name of person you are adding:<br><input type="text" name="new_name" placeholder="full first and last name" required><br><br>
-                    Name of person that they are pictured with: <br> <input type="text" name="existing_name" placeholder="full first and last name" required><br><br>
+                    Name of person you are adding:<br>
+                    <input type="text" name="new_name" placeholder="full first and last name" ><br><br>
+                    Name of person that they are pictured with: <br>
+                    <input type="text" name="existing_name" placeholder="full first and last name" ><br><br>
                     .jpg file of photo <br>
-                    <input type="file" accept="image/png" required>
+                    <input type="file" name="newimg" accept="image/jpg" >
                 </span>
-                <button type="button" id="insertbtn" >Insert!</button>
+                <button id="insertbtn" class="ylwbtn" >Insert!</button>
             </form>
-
+            <!--
+                new_name
+                existing_name
+                newimg
+            -->
 
         </main>
     </body>
